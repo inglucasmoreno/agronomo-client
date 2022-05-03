@@ -46,7 +46,8 @@ export class UsuariosComponent implements OnInit {
               private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.ubicacionActual = 'Dashboard - Usuarios' 
+    this.dataService.ubicacionActual = 'Dashboard - Usuarios';
+    this.dataService.showMenu = false;
     this.alertService.loading();
     this.listarUsuarios(); 
   }

@@ -13,6 +13,9 @@ import { NuevoUsuarioComponent } from './usuarios/nuevo-usuario.component';
 import { EditarUsuarioComponent } from './usuarios/editar/editar-usuario.component';
 import { EditarPasswordComponent } from './usuarios/editar/editar-password.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { CamposComponent } from './campos/campos.component';
+import { LotesComponent } from './lotes/lotes.component';
+import { UnidadesMedidaComponent } from './unidades-medida/unidades-medida.component';
 
 const routes: Routes = [
     {
@@ -33,6 +36,15 @@ const routes: Routes = [
             { path: 'usuarios/editar/:id', data: { permisos: 'USUARIOS_NAV' }, canActivate: [PermisosGuard], component: EditarUsuarioComponent },
             { path: 'usuarios/password/:id', data: { permisos: 'USUARIOS_NAV' }, canActivate: [PermisosGuard], component: EditarPasswordComponent },
             
+            // Campos
+            { path: 'campos', data: { permisos: 'CAMPOS_NAV' }, canActivate: [PermisosGuard], component: CamposComponent },
+
+            // Lotes
+            { path: 'campos/lotes/:campo', data: { permisos: 'LOTES_NAV' }, canActivate: [PermisosGuard], component: LotesComponent },
+
+            // Unidades de medida
+            { path: 'unidades_medida', data: { permisos: 'UNIDADES_MEDIDA_NAV' }, canActivate: [PermisosGuard], component: UnidadesMedidaComponent },
+
         ]
     }
 ];
