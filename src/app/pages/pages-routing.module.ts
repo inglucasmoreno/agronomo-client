@@ -16,6 +16,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { CamposComponent } from './campos/campos.component';
 import { LotesComponent } from './lotes/lotes.component';
 import { UnidadesMedidaComponent } from './unidades-medida/unidades-medida.component';
+import { ProductosComponent } from './productos/productos.component';
 
 const routes: Routes = [
     {
@@ -42,6 +43,9 @@ const routes: Routes = [
             // Lotes
             { path: 'campos/lotes/:campo', data: { permisos: 'LOTES_NAV' }, canActivate: [PermisosGuard], component: LotesComponent },
 
+            // Productos
+            { path: 'productos', data: { permisos: 'PRODUCTOS_NAV' }, canActivate: [PermisosGuard], component: ProductosComponent },
+            
             // Unidades de medida
             { path: 'unidades_medida', data: { permisos: 'UNIDADES_MEDIDA_NAV' }, canActivate: [PermisosGuard], component: UnidadesMedidaComponent },
 
