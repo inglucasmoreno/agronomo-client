@@ -18,6 +18,7 @@ import { CamposComponent } from './campos/campos.component';
 import { LotesComponent } from './lotes/lotes.component';
 import { UnidadesMedidaComponent } from './unidades-medida/unidades-medida.component';
 import { ProductosComponent } from './productos/productos.component';
+import { ProveedoresComponent } from './proveedores/proveedores.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ProductosComponent } from './productos/productos.component';
     LotesComponent,
     UnidadesMedidaComponent,
     ProductosComponent,
+    ProveedoresComponent,
   ],
   imports: [
     CommonModule,
